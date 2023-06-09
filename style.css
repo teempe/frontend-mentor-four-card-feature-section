@@ -51,6 +51,7 @@ body {
 .grid-cont {
     display: grid;
     grid-template-areas:
+        "head"
         "supervisor"
         "team"
         "karma"
@@ -64,8 +65,11 @@ body {
 
 /* HEADER */
 .head {
+    grid-area: head;
+    justify-self: center;
     text-align: center;
-    margin-bottom: 76px;
+    margin-bottom: 52px;
+    max-width: 546px;
 }
 
 .head-title {
@@ -159,10 +163,27 @@ footer {
     color: hsl(228, 45%, 44%); 
 }
 
-@media only screen and (min-width: 1110px) {
+@media only screen and (min-width: 769px) {
+    .grid-cont {
+        grid-template-areas:
+            "head head head"
+            "supervisor team calculator"
+            "supervisor karma calculator";
+    }
+
+    .supervisor-card {
+        align-self: center;
+    }
+
+    .calculator-card {
+        align-self: center;
+    }
+
+}
+
+@media only screen and (min-width: 1024px) {
     .head {
-        padding: 0 282px;
-        margin-bottom: 62px;
+        margin-bottom: 34px;
     }
 
     .head-title {
@@ -180,9 +201,6 @@ footer {
     }
 
     .grid-cont {
-        grid-template-areas: 
-            "supervisor team calculator"
-            "supervisor karma calculator";
         gap: 30px;
     }
 
@@ -201,13 +219,4 @@ footer {
     .card-icon {
         width: auto;
     }
-
-    .supervisor-card {
-        align-self: center;
-    }
-
-    .calculator-card {
-        align-self: center;
-    }
-
 }
