@@ -56,7 +56,7 @@ body {
         "team"
         "karma"
         "calculator";
-    gap: 24px;
+    gap: 1.5rem;
 }
 
 .feature-component {
@@ -68,21 +68,21 @@ body {
     grid-area: head;
     justify-self: center;
     text-align: center;
-    margin-bottom: 52px;
+    margin-bottom: 3.25rem;
     max-width: 546px;
 }
 
 .head-title {
     color: var(--very-dark-blue);
-    font-size: 24.3px;
+    font-size: 1.52rem;
     font-weight: var(--fw-thin);
 }
 
 .head-subtitle {
     color: var(--very-dark-blue);
-    font-size: 24.3px;
+    font-size: 1.52rem;
     font-weight: var(--fw-bold);
-    margin-bottom: 14px;
+    margin-bottom: 0.875rem;
 }
 
 .head-text {
@@ -93,7 +93,7 @@ body {
 /* CARDS */
 .card {
     background-color: var(--white);
-    padding: 26px 28px 28px;
+    padding: 1.625rem 1.75rem 1.75rem;
     border-radius: 8px;
     overflow: hidden;
     position: relative;
@@ -111,16 +111,16 @@ body {
 
 .card-title {
     color: var(--very-dark-blue);
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: var(--fw-bold);
-    margin-bottom: 3px;
+    margin-bottom: 0.188rem;
 }
 
 .card-text {
     color: var(--grayish-blue);
-    font-size: 13.2px;
+    font-size: 0.825rem;
     line-height: 1.75em;
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
 }
 
 .card-icon {
@@ -149,20 +149,20 @@ body {
 }
 
 /* FOOTER */
-/* TODO: style footer at the end */
 footer {
-    display: none;
+    margin-top: 64px;
 }
 
 .attribution { 
     font-size: 11px; 
-    text-align: center; 
+    text-align: center;
 }
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
 
+/* MEDIA QUERIES */
 @media only screen and (min-width: 769px) {
     .grid-cont {
         grid-template-areas:
@@ -183,37 +183,37 @@ footer {
 
 @media only screen and (min-width: 1024px) {
     .head {
-        margin-bottom: 34px;
+        margin-bottom: 2.125rem;
     }
 
     .head-title {
-        font-size: 36.5px;
-        margin-bottom: -4px;
+        font-size: 2.281rem;
+        margin-bottom: -0.25rem;
     }
 
     .head-subtitle {
-        font-size: 36.5px;
-        margin-bottom: 16px;
+        font-size: 2.281rem;
+        margin-bottom: 1rem;
     }
 
     .head-text {
-        font-size: 15.2px;
+        font-size: 0.95rem;
     }
 
     .grid-cont {
-        gap: 30px;
+        gap: 1.875rem;
     }
 
     .card {
-        padding: 30px 32px 32px;
+        padding: 1.875rem 2rem 2rem;
     }
 
     .card-title {
-        margin-bottom: 8px;
+        margin-bottom: 0.5rem;
     }
     
     .card-text {
-        margin-bottom: 40px;
+        margin-bottom: 2.5rem;
     }
 
     .card-icon {
